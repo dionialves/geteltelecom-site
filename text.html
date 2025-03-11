@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Hover com Linha Superior</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        a::after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            color: #039bfe;
+        }
+
+        a:hover::after {
+            background-color: #039bfe;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#">Passe o mouse aqui</a>
+
+</body>
+
+</html>
