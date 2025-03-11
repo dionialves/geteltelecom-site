@@ -14,7 +14,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-size: 14px;
-    background: linear-gradient(to bottom, #2d2e41, #17182d);
+    background: #2d2e41;
 }
 
 /* Estilo para o retângulo principal */
@@ -136,8 +136,110 @@ nav ul li a:hover::after {
     background-repeat: no-repeat;
 }
 
-.produtos {
-    height: 1000px;
+.container-products {
+    width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.products-h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 40px;
+    margin: 40px 0px 0px 0px;
+}
+
+.products-h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    color: #E1E1E1;
+}
+
+.products {
+    margin-top: 60px;
+}
+
+.product-img {
+    margin: auto 20px;
+    width: 280px;
+}
+
+.product-img-featured {
+    width: 380px;
+}
+
+.button-whatsapp {
+    background-color: #00FFB6;
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    border-style: solid;
+    border-color: #0D5092;
+    border-radius: 27px 27px 27px 27px;
+    padding: 25px 25px 25px 25px;
+    cursor: pointer;
+    margin: 70px 0px 20px 0px;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+    /* Aumenta o tamanho em 10% */
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.wrapper-h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 900;
+    font-size: 38px;
+    margin: 40px auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.wrapper-line {
+    display: flex;
+}
+
+.wrapper-elements {}
+
+.wrapper-elements-box {
+    width: 275px;
+    padding: 45px;
+}
+
+.wrapper-elements-box-img {
+    width: 88px;
+}
+
+.wrapper-elements-box-h3 {
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wrapper-elements-box-text {
+    font-family: "Ubuntu", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+.last-call {
+
+    background: linear-gradient(to bottom, #2d2e41, #17182d);
+    height: 600px;
 }
 
 footer {
