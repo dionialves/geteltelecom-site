@@ -429,3 +429,34 @@ footer {
     color: #ffffff;
     font-weight: 600;
 }
+
+.legal-information {
+    width: 1200px;
+    margin: auto;
+    color: #ffffff;
+    font-family: "Inter", Sans-serif;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+
+.legal-information-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 40px 0px 0px 0px;
+    color: #ffffff;
+    font-family: "Inter", Sans-serif;
+    font-size: 12px;
+}
+
+.legal-information-list-item {
+    color: #ffffff;
+    font-family: "Inter", Sans-serif;
+    font-size: 12px;
+}
+
+.legal-information-list-item:hover {
+    text-decoration: underline;
+}
