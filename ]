@@ -247,24 +247,24 @@ nav ul li a:hover::after {
 }
 
 .product-button-whatsapp-svg {
-    fill: #2d2e41;
+    fill: #ffffff;
     width: 14px;
 }
 
 .product-button-whatsapp {
     background-color: #0092fe;
-    color: #2d2e41;
-    font-family: "Montserrat", Sans-serif;
-    font-size: 18px;
+    color: #ffffff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
     font-weight: 600;
     border-style: solid;
     border-color: #0092fe;
     border-width: 2px 2px 2px 2px;
     border-radius: 30px 30px 30px 30px;
-    padding: 25px 35px 25px 35px;
+    padding: 15px 35px 15px 35px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    margin: 40px 0px 80px 0px;
+    margin-right: 20px;
 }
 
 .product-button-whatsapp-svg {
@@ -272,7 +272,7 @@ nav ul li a:hover::after {
 }
 
 .product-button-whatsapp:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 .product-button-whatsapp-houver-blue:hover {
