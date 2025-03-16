@@ -1,6 +1,7 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
     font-family: "Source Sans 3", Sans-serif;
     font-weight: 600;
 }
@@ -17,22 +18,27 @@ a {
 
 body {
     padding: 0px;
-    margin: 0px;
     font-size: 14px;
     background: #2d2e41;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 /* Estilo para o retângulo principal */
 header {
     display: flex;
-    width: 1200px;
-    margin: auto;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 10px auto;
     height: 100px;
 }
 
 .img-logo {
     height: 70px;
-    margin: auto;
+    margin-left: 10px;
 }
 
 .retangulo {
@@ -96,7 +102,7 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     margin: 0;
 }
 
@@ -141,18 +147,20 @@ nav ul li a:hover::after {
     background-position: left center;
     background-repeat: no-repeat;
     padding-top: 120px;
+    margin-left: 10px;
     box-sizing: border-box;
 }
 
 .banner-contend {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
     font-style: normal;
     color: #FFFFFF;
 }
 
 .banner-contend-item {
-    width: 600px;
+    width: 50%;
 }
 
 .banner-contend-title {
@@ -163,6 +171,7 @@ nav ul li a:hover::after {
 
 .banner-contend-text {
     color: #DBDBDB;
+    margin: 10px;
     line-height: 1.6;
     font-size: 16px;
 }
@@ -210,7 +219,8 @@ nav ul li a:hover::after {
 
 
 .container-products {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 20px auto;
     text-align: center;
 }
@@ -235,7 +245,6 @@ nav ul li a:hover::after {
 }
 
 .product-img {
-    margin: auto 20px;
     width: 280px;
 }
 
@@ -295,7 +304,8 @@ nav ul li a:hover::after {
 .button-whatsapp:hover {}
 
 .wrapper {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -314,6 +324,8 @@ nav ul li a:hover::after {
 
 .wrapper-line {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .wrapper-elements {}
@@ -346,18 +358,20 @@ nav ul li a:hover::after {
 }
 
 .last-call {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
     display: flex;
+    padding: 0 0 0 10px;
     justify-content: space-around;
 }
 
 .last-call-information {
-    width: 600px;
+    width: 50%;
 }
 
 .last-call-img {
-    width: 600px;
+    width: 50%;
 }
 
 .last-call-information-title {
@@ -386,7 +400,8 @@ footer {
 
 .footer-container {
     margin: 10px auto;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 
@@ -431,7 +446,8 @@ footer {
 }
 
 .legal-information {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
     color: #ffffff;
     font-family: "Inter", Sans-serif;
@@ -459,4 +475,53 @@ footer {
 
 .legal-information-list-item:hover {
     text-decoration: underline;
+}
+
+
+/* MEDIA QUERIES*/
+
+/* 📱 Celulares pequenos (320px - 480px) */
+@media (max-width: 480px) {
+}
+
+/* 📱📏 Celulares médios e grandes (481px - 767px) */
+@media (max-width: 767px) {
+}
+
+/* 📲 Tablets e iPads (768px - 1024px) */
+@media (max-width: 1100px) {
+    .product-img {
+        width: 240px;
+    }
+
+    .product-img-featured {
+        width: 260px;
+    }
+
+    .wrapper {
+        max-width: 600px;
+    }
+
+    .wrapper-line {
+        justify-content: center;
+    }
+
+    .banner {
+        background-position: center center;
+    }
+
+    .last-call-img {
+    }
+}
+
+/* 💻 Laptops e notebooks (1025px - 1366px) */
+@media (max-width: 1366px) {
+}
+
+/* 🖥️ Monitores Grandes (1367px - 1920px) */
+@media (max-width: 1920px) {
+}
+
+/* 🖥️📺 Monitores 4K e Ultra-Wide (Acima de 1921px) */
+@media (min-width: 1921px) {
 }
