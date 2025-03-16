@@ -53,6 +53,15 @@ header {
     margin: 0 auto;
 }
 
+.menu-toggle {
+    display: none;    
+}
+
+.menu-mobile.active {
+    display: block;
+}
+
+
 .contato {
     display: flex;
     justify-content: center;
@@ -231,7 +240,7 @@ nav ul li a:hover::after {
     font-style: normal;
     color: #FFFFFF;
     font-size: 40px;
-    margin: 40px 0px 0px 0px;
+    margin: 40px 0px 10px 0px;
 }
 
 .products-h3 {
@@ -241,6 +250,9 @@ nav ul li a:hover::after {
 }
 
 .products {
+    display: flex;
+    justify-content: center;
+    align-items: end; 
     margin-top: 60px;
 }
 
@@ -395,11 +407,10 @@ nav ul li a:hover::after {
 footer {
     display: flex;
     background-color: #2d2e41;
-    height: 300px;
 }
 
 .footer-container {
-    margin: 10px auto;
+    margin: 50px auto;
     max-width: 1200px;
     width: 100%;
     display: flex;
@@ -407,61 +418,97 @@ footer {
 
 }
 
-.footer-img {
-    height: 70px;
-    margin: 20px auto;
-}
-
-.footer-h2 {
+.footer-title {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-style: normal;
     font-size: 25px;
     color: white;
     font-weight: 600;
 }
 
-.footer-column {
-    width: 300px;
+.footer-text {
+    color: #FFFFFF;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 10px 10px 10px 0px;
+    margin-bottom: 30px;
+}
+
+.footer-text a {
+    color: #FFFFFF;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 10px 10px 10px 0px;
+    margin-bottom: 30px;
+}
+
+.footer-social-media {
+    fill: #ffffff;
+    width: 30px;
+    margin: 30px 20px 20px 20px;
+}
+
+.footer-column-address {
+    width: 360px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column-maps {
+    width: 660px;
+    height: 350px;
     padding: 10px;
 }
 
-.footer-list {
-    list-style: none;
-    padding-left: 20px;
+.footer-column-maps iframe {
+    width: 100%;
+    height: 100%;
 }
 
-.footer-list-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer-list-item-span {
-    padding: 5px;
-}
-
-.footer-list-item-link {
-    display: flex;
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: 600;
+.line {
+    background-color: #686a96;
+    border: none;
+    height: 1px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .legal-information {
+    display: flex;
+    justify-content: space-around;
     max-width: 1200px;
     width: 100%;
-    margin: auto;
+    margin: 40px auto;
     color: #ffffff;
     font-family: "Inter", Sans-serif;
     font-size: 12px;
     margin-bottom: 40px;
+    padding: 10px;
 }
 
+.legal-information-img {
+    height: 70px;
+
+}
+
+.legal-information-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 0px 10px;
+}
 
 .legal-information-list {
     list-style: none;
     display: flex;
     gap: 20px;
     padding: 0;
-    margin: 40px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
     color: #ffffff;
     font-family: "Inter", Sans-serif;
     font-size: 12px;
@@ -480,12 +527,16 @@ footer {
 
 /* MEDIA QUERIES*/
 
-/* 📱 Celulares pequenos (320px - 480px) */
-@media (max-width: 480px) {
+/* 🖥️📺 Monitores 4K e Ultra-Wide (Acima de 1921px) */
+@media (min-width: 1921px) {
 }
 
-/* 📱📏 Celulares médios e grandes (481px - 767px) */
-@media (max-width: 767px) {
+/* 🖥️ Monitores Grandes (1367px - 1920px) */
+@media (max-width: 1920px) {
+}
+
+/* 💻 Laptops e notebooks (1025px - 1366px) */
+@media (max-width: 1366px) {
 }
 
 /* 📲 Tablets e iPads (768px - 1024px) */
@@ -514,14 +565,159 @@ footer {
     }
 }
 
-/* 💻 Laptops e notebooks (1025px - 1366px) */
-@media (max-width: 1366px) {
+/* 📱📏 Celulares médios e grandes (481px - 767px) */
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+    
+    nav {
+        height: 10px;
+    }
+
+    nav ul {
+        padding: 0px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        left: 0px;
+        width: 100%;
+        height: 90%;
+        background-color: #686a96;
+
+    }
+
+    nav ul li { 
+    }
+
+    nav ul li a {
+        padding: 10px 0px 10px 30px;
+        font-size: 28px;
+        display: block;
+        font-weight: 600;
+        color: #FFFFFF;
+        transition: color 0.3s ease;
+        position: relative;
+    }
+
+    nav ul li:hover {
+        background-color: #379ecb;
+    }
+
+
+    nav ul li a::after {
+        content: none;
+    }
+
+    nav ul li a:hover {
+        color: #ffffff;
+    }
+
+    nav ul li a:hover::after {
+        background-color: transparent;
+    }
+
+    .menu-toggle {
+        width: 60px;
+        display: block;
+    }
+
+    .menu-toggle svg {
+        cursor: pointer;
+        width: 40px;
+    }
+
+    .banner {
+        width: 100%;
+        padding-top: 80px;
+        background-image: url('img/dasdasd.png');
+    }
+
+    .banner-contend-item {
+        width: 100%;
+    }
+
+    .container-contatos {
+        display: none;
+    } 
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-img, .product-img-featured {
+        width: 360px;
+    }
+
+    .last-call {
+        flex-direction: column;
+    }
+
+    .last-call-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .last-call-information {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-column-address {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-column-maps {
+        width: 100%;
+    }
+
+    .legal-information-list {
+        flex-direction: column;
+    }
+
+    .legal-information-wrapper {
+        align-items: center;
+    }
+
+    .legal-information {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .legal-information-img {
+        margin-bottom: 30px;
+    }
 }
 
-/* 🖥️ Monitores Grandes (1367px - 1920px) */
-@media (max-width: 1920px) {
+/* 📱 Celulares pequenos (320px - 480px) */
+@media (max-width: 480px) {
+    .banner {
+        margin: 0px;
+        height: 600px;
+    }
+
+    .banner-contend-title {
+        margin-bottom: 40px;
+    }
+
+    .products-h2 {
+    }
+    
+    .banner-contend-item {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .banner-group-button {
+        display: none;
+    }
+    
 }
 
-/* 🖥️📺 Monitores 4K e Ultra-Wide (Acima de 1921px) */
-@media (min-width: 1921px) {
-}
+
