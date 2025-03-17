@@ -22,7 +22,8 @@ body {
     background: #2d2e41;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -54,7 +55,7 @@ header {
 }
 
 .menu-toggle {
-    display: none;    
+    display: none;
 }
 
 .menu-mobile.active {
@@ -252,7 +253,7 @@ nav ul li a:hover::after {
 .products {
     display: flex;
     justify-content: center;
-    align-items: end; 
+    align-items: end;
     margin-top: 60px;
 }
 
@@ -404,6 +405,49 @@ nav ul li a:hover::after {
     margin-bottom: 60px;
 }
 
+.about {
+    padding-bottom: 80px;
+}
+
+.about hr {
+    height: 3px;
+}
+
+.about-item {
+    margin-bottom: 40px;
+}
+
+.about-item img {
+    width: 600px;
+    border-radius: 15px;
+}
+
+.about-item img:hover {
+    filter: brightness(90%);
+}
+
+.about-item p {
+    padding: 20px 20px 20px 60px;
+    margin-bottom: 0px;
+}
+
+.about-item h2 {
+
+    padding: 0px 20px 20px 60px;
+}
+
+.about-item-bottom {
+    margin-top: 40px;
+}
+
+.coverage {
+    width: 480px;
+}
+
+.coverage button {
+    margin-left: 60px;
+}
+
 footer {
     display: flex;
     background-color: #2d2e41;
@@ -528,16 +572,13 @@ footer {
 /* MEDIA QUERIES*/
 
 /* 🖥️📺 Monitores 4K e Ultra-Wide (Acima de 1921px) */
-@media (min-width: 1921px) {
-}
+@media (min-width: 1921px) {}
 
 /* 🖥️ Monitores Grandes (1367px - 1920px) */
-@media (max-width: 1920px) {
-}
+@media (max-width: 1920px) {}
 
 /* 💻 Laptops e notebooks (1025px - 1366px) */
-@media (max-width: 1366px) {
-}
+@media (max-width: 1366px) {}
 
 /* 📲 Tablets e iPads (768px - 1024px) */
 @media (max-width: 1100px) {
@@ -561,8 +602,7 @@ footer {
         background-position: center center;
     }
 
-    .last-call-img {
-    }
+    .last-call-img {}
 }
 
 /* 📱📏 Celulares médios e grandes (481px - 767px) */
@@ -570,7 +610,7 @@ footer {
     header {
         justify-content: space-between;
     }
-    
+
     nav {
         height: 10px;
     }
@@ -588,8 +628,7 @@ footer {
 
     }
 
-    nav ul li { 
-    }
+    nav ul li {}
 
     nav ul li a {
         padding: 10px 0px 10px 30px;
@@ -640,14 +679,15 @@ footer {
 
     .container-contatos {
         display: none;
-    } 
+    }
 
     .products {
         flex-direction: column;
         align-items: center;
     }
 
-    .product-img, .product-img-featured {
+    .product-img,
+    .product-img-featured {
         width: 360px;
     }
 
@@ -706,9 +746,8 @@ footer {
         margin-bottom: 40px;
     }
 
-    .products-h2 {
-    }
-    
+    .products-h2 {}
+
     .banner-contend-item {
         margin-left: 0px;
         text-align: center;
@@ -717,7 +756,5 @@ footer {
     .banner-group-button {
         display: none;
     }
-    
+
 }
-
-
