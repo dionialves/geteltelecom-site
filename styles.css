@@ -258,11 +258,11 @@ nav ul li a:hover::after {
 }
 
 .product-img {
-    width: 280px;
+    width: 370px;
 }
 
 .product-img-featured {
-    width: 300px;
+    width: 390px;
 }
 
 .product-button-whatsapp-svg {
@@ -287,7 +287,7 @@ nav ul li a:hover::after {
 }
 
 .product-button-whatsapp:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .product-button-whatsapp-houver-blue:hover {
@@ -362,6 +362,7 @@ nav ul li a:hover::after {
     font-family: "Ubuntu", Sans-serif;
     font-size: 14px;
     font-weight: 400;
+    color: #DBDBDB;
 
 }
 
@@ -397,47 +398,12 @@ nav ul li a:hover::after {
 }
 
 .last-call-information-text {
-    font-family: "Inter", Sans-serif;
+    font-family: "Source Sans 3", Sans-serif;
+    font-weight: 600;
     font-size: 18px;
-    font-weight: 400;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #DBDBDB;
     margin-bottom: 60px;
-}
-
-.about {
-    padding-bottom: 80px;
-}
-
-.about hr {
-    height: 3px;
-}
-
-.about-item {
-    margin-bottom: 40px;
-}
-
-.about-item img {
-    width: 600px;
-    border-radius: 15px;
-}
-
-.about-item img:hover {
-    filter: brightness(90%);
-}
-
-.about-item p {
-    padding: 20px 20px 20px 60px;
-    margin-bottom: 0px;
-}
-
-.about-item h2 {
-
-    padding: 0px 20px 20px 60px;
-}
-
-.about-item-bottom {
-    margin-top: 40px;
 }
 
 .coverage {
@@ -472,20 +438,18 @@ footer {
 }
 
 .footer-text {
-    color: #FFFFFF;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Source Sans 3", Sans-serif;
+    font-weight: 600;
+    color: #DBDBDB;
     font-size: 16px;
     padding: 10px 10px 10px 0px;
     margin-bottom: 30px;
 }
 
 .footer-text a {
-    color: #FFFFFF;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Source Sans 3", Sans-serif;
+    font-weight: 600;
+    color: #DBDBDB;
     font-size: 16px;
     padding: 10px 10px 10px 0px;
     margin-bottom: 30px;
@@ -494,7 +458,7 @@ footer {
 .footer-social-media {
     fill: #ffffff;
     width: 30px;
-    margin: 30px 20px 20px 20px;
+    margin: 15px 15px 15px 15px;
 }
 
 .footer-column-address {
@@ -566,6 +530,87 @@ footer {
 
 .legal-information-list-item:hover {
     text-decoration: underline;
+}
+
+.about {
+    padding-bottom: 80px;
+}
+
+.about hr {
+    height: 3px;
+}
+
+.about-item {
+    margin-bottom: 40px;
+}
+
+.about-item img {
+    width: 600px;
+    border-radius: 15px;
+}
+
+.about-item img:hover {
+    filter: brightness(90%);
+}
+
+.about-item p {
+    color: #DBDBDB;
+    padding: 20px 20px 20px 60px;
+    margin-bottom: 0px;
+}
+
+.about-item h2 {
+
+    padding: 0px 20px 20px 60px;
+}
+
+.about-item-bottom {
+    margin-top: 40px;
+}
+
+.contact {
+    padding-bottom: 80px;
+    display: flex;
+}
+
+.contact-item {
+    width: 400px;
+}
+
+.contact-item img:hover {
+    filter: brightness(90%);
+}
+
+.contact-item p {
+    padding: 0px 0px 0px 10px;
+    margin-bottom: 0px;
+    color: #DBDBDB;
+    font-size: 16px;
+}
+
+.contact-item h2 {
+    padding: 0px 0px 0px 10px;
+}
+
+.contact-item h3 {
+    padding: 20px 0px 0px 10px;
+}
+
+.contact-item h3 {
+    font-size: 22px;
+}
+
+.contact-item a {
+    color: #DBDBDB;
+}
+
+.contact-social-media-icon {
+    width: 20px;
+    margin: 10px 10px 10px 10px;
+}
+
+.contact-social-media {
+    display: flex;
 }
 
 
