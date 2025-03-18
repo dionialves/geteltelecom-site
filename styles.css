@@ -181,7 +181,7 @@ nav ul li a:hover::after {
 
 .banner-contend-text {
     color: #DBDBDB;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
     line-height: 1.6;
     font-size: 16px;
 }
