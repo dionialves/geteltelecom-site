@@ -540,6 +540,44 @@ footer {
 .legal-information-list-item:hover {
     text-decoration: underline;
 }
+.contracts-container {
+    padding-bottom: 120px;
+}
+
+.contracts {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+}
+
+.contracts h1 {
+    padding-bottom: 90px;
+}
+
+.contracts-item-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.contracts-area a{
+    padding: 10px;
+}
+
+.contracts-item {
+
+    font-size: 24px;
+    color: white;
+}
+
+.contracts-item a {
+    display: flex;
+    align-items: center;
+}
+
+.contracts-item img {
+    margin-right: 8px;
+    width: 60px;
+}
 
 .about {
     padding-bottom: 80px;
