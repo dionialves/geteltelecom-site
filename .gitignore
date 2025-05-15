@@ -1,0 +1,40 @@
+# node_modules (dependências instaladas)
+node_modules/
+
+# Pasta de build (gerada automaticamente)
+dist/
+
+# Arquivos de log
+*.log
+
+# Ambiente
+.env
+.env.*.local
+
+# Cache do Astro
+.astro/
+
+# Cache do Vite (Astro usa o Vite por baixo)
+.vite/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.tmp
+*.swp
+*.swo
+
+# Sistema de deploy (opcional)
+netlify/
+.vercel/
+output/
+
+# Docker (opcional)
+docker-compose.override.yml
+*.local.yml
