@@ -1,1 +1,0 @@
-# geteltelecom-site
