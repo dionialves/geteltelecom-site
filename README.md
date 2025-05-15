@@ -1,48 +1,65 @@
-# Astro Starter Kit: Basics
+# 📱 Getel Telecom — Site Institucional
 
-```sh
-npm create astro@latest -- --template basics
+Este repositório contém o código-fonte do site institucional da **Getel Telecom**, desenvolvido com [Astro](https://astro.build/). O objetivo é fornecer uma presença online moderna, responsiva e de fácil manutenção para a empresa.
+
+## 🚀 Tecnologias Utilizadas
+
+* [Astro](https://astro.build/): Framework moderno para construção de sites estáticos rápidos e otimizados.
+* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript): Para interatividade e funcionalidades dinâmicas.
+* [Vite](https://vitejs.dev/): Ferramenta de build moderna utilizada internamente pelo Astro.
+* [npm](https://www.npmjs.com/): Gerenciador de pacotes para instalação de dependências.
+
+## 📁 Estrutura do Projeto
+
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
-├── public/
-│   └── favicon.svg
+├── public/             # Arquivos públicos (imagens, ícones, etc.)
 ├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/     # Componentes reutilizáveis (ex: Header, Footer)
+│   ├── layouts/        # Layouts base para as páginas
+│   ├── pages/          # Páginas do site (ex: index.astro, contato.astro)
+│   └── scripts/        # Scripts JS usados para interatividade
+├── astro.config.mjs    # Configurações do Astro
+├── package.json        # Dependências e scripts do projeto
+└── README.md           # Documentação do projeto
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠️ Como Executar o Projeto Localmente
 
-## 🧞 Commands
+1. **Clone o repositório:**
 
-All commands are run from the root of the project, from a terminal:
+   ```bash
+   git clone https://github.com/dionialves/geteltelecom-site.git
+   cd geteltelecom-site
+   ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+2. **Instale as dependências:**
 
-## 👀 Want to learn more?
+   ```bash
+   npm install
+   ```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+3. **Inicie o servidor de desenvolvimento:**
+
+   ```bash
+   npm run dev
+   ```
+
+   O site estará disponível em `http://localhost:4321`.
+
+## 📅 Páginas do Site
+
+* `/`: Página inicial
+* `/cobertura`: Informações sobre a área de cobertura
+* `/contato`: Formulário de contato
+* `/quemsomos`: Informações sobre a empresa
+
+## 🔖 Scripts Disponíveis
+
+* `npm run dev`: Inicia o servidor de desenvolvimento.
+* `npm run build`: Gera a versão de produção do site na pasta `dist/`.
+* `npm run preview`: Visualiza a versão de produção localmente.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
