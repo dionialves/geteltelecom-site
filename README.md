@@ -2,6 +2,14 @@
 
 Este repositório contém o código-fonte do site institucional da **Getel Telecom**, desenvolvido com [Astro](https://astro.build/). O objetivo é fornecer uma presença online moderna, responsiva e de fácil manutenção para a empresa.
 
+🏢 Sobre a Getel Telecom
+
+A Getel Telecom é uma empresa de telecomunicações com sede em Chapecó, Santa Catarina, atuando no mercado desde o ano 2000. Com mais de 24 anos de experiência, a Getel se dedica a fornecer soluções de comunicação inovadoras, atendendo às demandas de telecomunicações de diversos setores, incluindo o agronegócio, comunidades, comércio, residências e serviços públicos.
+
+A empresa investe continuamente em tecnologia de ponta e conta com uma equipe de profissionais altamente qualificados, garantindo serviços de alta qualidade, preços competitivos e um atendimento personalizado e humanizado.
+
+Saiba mais em [getel.net.br](http://www.getel.net.br)
+
 ## 🚀 Tecnologias Utilizadas
 
 * [Astro](https://astro.build/): Framework moderno para construção de sites estáticos rápidos e otimizados.
@@ -13,15 +21,15 @@ Este repositório contém o código-fonte do site institucional da **Getel Telec
 
 ```
 /
-├── public/             # Arquivos públicos (imagens, ícones, etc.)
+├── public/             
 ├── src/
-│   ├── components/     # Componentes reutilizáveis (ex: Header, Footer)
-│   ├── layouts/        # Layouts base para as páginas
-│   ├── pages/          # Páginas do site (ex: index.astro, contato.astro)
-│   └── scripts/        # Scripts JS usados para interatividade
-├── astro.config.mjs    # Configurações do Astro
-├── package.json        # Dependências e scripts do projeto
-└── README.md           # Documentação do projeto
+│   ├── components/    
+│   ├── layouts/       
+│   ├── pages/         
+│   └── scripts/        
+├── astro.config.mjs  
+├── package.json        
+└── README.md          
 ```
 
 ## 🛠️ Como Executar o Projeto Localmente
