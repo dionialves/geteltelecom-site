@@ -3,6 +3,8 @@ import LegalInformation from "./LegalInformation.astro";
 import Footer from "./Footer.astro";
 import Nav from "./Nav.astro";
 import Header from "./Header.astro";
+
+const { title } = Astro.props;
 ---
 
 
@@ -17,7 +19,7 @@ import Header from "./Header.astro";
         <link rel="stylesheet" href="/styles.css">
         <link rel="stylesheet" href="/style-whatsapp.css">
         <script src="/js/menu.js" is:inline> </script>
-        <title>Getel Telecom - Ultravelocidade</title>
+        <title>{title}</title>
 
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
