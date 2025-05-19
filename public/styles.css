@@ -152,7 +152,7 @@ nav ul li a:hover::after {
 .banner {
     width: 100%;
     height: 600px;
-    background-image: url('img/banner_default.png');
+    background-image: url('img/banner_default.avif');
     background-size: cover;
     background-position: left center;
     background-repeat: no-repeat;
@@ -203,7 +203,8 @@ nav ul li a:hover::after {
     font-size: 16px;
     font-weight: 600;
     border-style: solid;
-    border-width: 2px 2px 2px 2px;
+    border-width: 2px;
+    border-color: white;
     border-radius: 30px 30px 30px 30px;
     padding: 15px 35px 15px 35px;
     cursor: pointer;
@@ -395,6 +396,10 @@ nav ul li a:hover::after {
     font-size: 38px;
     line-height: 49px;
     color: #FFFFFF;
+    padding: 0px 0px 20px 0px;
+}
+
+.last-call-information-title h2 {
 
 }
 
@@ -607,7 +612,7 @@ footer {
 
 .about-item p {
     color: #DBDBDB;
-    padding: 20px 20px 20px 60px;
+    padding: 20px 60px 20px 60px;
     margin-bottom: 0px;
 }
 
@@ -762,7 +767,7 @@ footer {
     .banner {
         width: 100%;
         padding-top: 80px;
-        background-image: url('img/banner_vertical.png');
+        background-image: url('img/banner_vertical.avif');
     }
 
     .banner-contend-item {
